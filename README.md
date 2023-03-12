@@ -62,25 +62,44 @@
 
 ### Задание 2
 
-`Приведите ответ в свободной форме........`
+`Установите Zabbix Agent на два хоста.`
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+1. `Cкриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу.`
+
+**Скриншот 2-1_1**
+<img src = "img/datacollection-hosts.jpg" width = 100%>
+
+
+2. `Cкриншот лога zabbix agent, где видно, что он работает с сервером`
+
+**Скриншот 2-2_1** установил debuglevel 4 и собрал данные
+<img src = "img/slave2log-debug4.jpg" width = 100%>
+
+3. `Скриншот раздела Monitoring > Latest data для обоих хостов`
+
+**Скриншот 2-3_1**
+<img src = "img/monitoing-latestdata.jpg" width = 100%>
+
+4. `текст использованных команд на машинах с заббикс агентом`
+```
+82  ls  
+83  wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb  
+84  dpkg -i zabbix-release_6.4-1+ubuntu22.04_all.deb  
+85  sudo dpkg -i zabbix-release_6.4-1+ubuntu22.04_all.deb  
+86  sudo search zabbix  
+87  apt search zabbix  
+88  sudo apt update  
+89  apt search zabbix  
+90  sudo apt install zabbix-agent2 zabbix-agent2-plugin-*  
+91  apt list --installed | grep zabbix  
+92  tail -f /var/log/zabbix/zabbix_agent2.log  
+93  sudp nano /etc/zabbix/zabbix_agent2.conf  
+94  sudo nano /etc/zabbix/zabbix_agent2.conf  
+95  sudo systemctl restart zabbix-agent2.service  
+96  tail -f /var/log/zabbix/zabbix_agent2.log  
+97  history  
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
 
 
 ---
