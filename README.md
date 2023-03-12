@@ -46,12 +46,13 @@
       66  cat /var/log/zabbix/zabbix_server.log
       67  sudo nano /etc/zabbix/nginx.conf
       68  systemctl restart nginx.service
-      69  sudo systemctl restart nginx.service
-      70  sudo systemctl status nginx.service
-      71  ip a
-      72  sudo systemctl restart zabbix-server zabbix-agent nginx php8.1-fpm
-      73  sudo systemctl enable zabbix-server zabbix-agent nginx php8.1-fpm
-      74  history
+    69  sudo systemctl restart nginx.service
+    70  sudo systemctl status nginx.service
+    71  ip a
+    72  sudo systemctl restart zabbix-server zabbix-agent nginx php8.1-fpm
+    73  sudo systemctl enable zabbix-server zabbix-agent nginx php8.1-fpm
+    74  history
+
 ```
 
 
